@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The size of</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: 3px solid coral;
+        }
+
+        .grid a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid a:hover {
+            opacity: 0.9;
+        }
+
+        /* responsive */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0 20px;
+            }
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The size of</h1>
+    
+    <div class="grid">
+        <a href="/pics/1.jpg"><img src="/pics/1.jpg"></a>
+        <a href="/pics/2.jpg"><img src="/pics/2.jpg"></a>
+        <a href="/pics/3.jpg"><img src="/pics/3.jpg"></a>
+        <a href="/pics/4.jpg"><img src="/pics/4.jpg"></a>
+        <a href="/pics/5.jpg"><img src="/pics/5.jpg"></a>
+    </div>
+
+</body>
+</html>
